@@ -1,0 +1,125 @@
+
+
+/* ESTILO DE 2 COLUMNAS DE TEXTO */
+
+#left
+{
+    width: 500px;
+    float: left;
+    padding-right: 50px;
+    padding-left: 30px;
+}
+#right
+{
+    margin-left: 300px;
+    padding-right: 50px;
+    padding-left: 30px;
+}
+.clear
+{
+    clear: both;
+}
+p.black{
+    color: #000000;
+    font-style: italic;
+}
+h2.orange{
+    color:#f39223;
+    text-align: center;
+    font-size:25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+}
+h2.black{
+    color:#000000;
+    text-align: center;
+    font-size:25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+}
+h2.white{
+    color:#ffffff;
+    text-align: center;
+    font-size:25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+}
+.separador{
+    height: 50px;
+}
+.separador2{
+    height: 20px;
+}
+img.estilo{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* FIN ESTILO DE 2 COLUMNAS DE TEXTO */
+
+
+
+h2.orange{
+    color:#f39223;
+    text-align: center;
+}
+body{ margin:0; padding:0;line-height:20px; font:12px arial;}
+*{ margin:0; padding:0;}
+img{ border:none; padding: 0; height:auto; display:block; margin: 0 auto;}
+.wp-caption, .wp-caption-text, .sticky, .gallery-caption, .aligncenter{ margin:0; padding:0;}
+p{ margin:0; padding:0;}
+.postmeta a:hover, a, #footer .widget-column a:hover, #copyright a:hover{ text-decoration:none; color:#0ec7ab;}
+ol,ul{ margin:0; padding:0;}
+ul li ul, ul li ul li ul, ol li ol, ol li ol li ol{ margin-left:10px; word-wrap:break-word;}
+h1,h2,h3,h4,h5,h6{ margin:0; padding:0; word-wrap:break-word;}
+.clear{ clear:both;}
+.alignnone{ width:100% !important;}
+img.alignleft, .alignleft{ float:left; margin:0 15px 0 0; padding:5px; border:1px solid #cccccc;}
+img.alignright, .alignright{ float:right; margin:0 0 0 15px; padding:5px; border:1px solid #cccccc;}
+
+
+/* ------ Woocommerce ------- */
+select.orderby{ margin:0; padding:0; height:35px; font:14x 'PT Sans', Helvetica, sans-serif; color:#4e4e4e; border:1px solid #cccccc;}
+.woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price{ color:#7ab040 !important;}
+
+.team_links{text-align:center; padding:10px 0; border-top:1px #fff solid;}
+.member_info{background:#f6f6f6; text-align:center; margin-top:10px;}
+.member_dtl{padding:15px;}
+.member_dtl p{ margin:5px 0 !important;}
+
+.mobile_nav a{background:url(images/mobile_nav_right.png) no-repeat right center #f6f6f6; border:1px #ccc solid; margin:10px 0 0; padding:8px 20px; display:none; font:400 20px 'Roboto Condensed',san-serif;}
+
+.pagination{display:table; clear:both;}
+.pagination ul{list-style:none; margin:20px 0;}
+.pagination ul li{display:inline; float:left; margin-right:5px;}
+.pagination ul li span, .pagination ul li a{background:#313131; color:#fff; padding:5px 10px; display:inline-block;}
+.pagination ul li .current, .pagination ul li a:hover{background:#0ec7ab;}
+
+#comment-nav-above .nav-previous, #comment-nav-below .nav-previous{ float:none !important; margin:10px 0;}
+ol.comment-list li{ list-style:none; margin-bottom:5px;}
+
+
+/* ============= Others ============ */
+body.wp-custom-logo .logo h2{display:none;}
+/* ============= Widget Sidebar ============ */
+#sidebar table{width:100%; text-align:center;}
+#calendar_wrap caption{font-weight:700; padding-bottom:10px; text-transform:uppercase;}
+#prev{text-align:left;}
+#next{text-align:right;}
+#sidebar select{ width:100%; height:25px;}
+.comment-author-link, .comment-author-link a{font-weight:700 !important; color:#000000;}
+#sidebar .widget-title a{color:#000000;}
+#sidebar input[type="text"], #sidebar input[type="search"]{width:71%; height:27px; margin-bottom:10px; padding-left:2%;}
+.recentcomments a{background-image:none !important; display:inline-block !important; border:none !important; text-align:left !important; padding:0 !important; margin:0 !important;}
+#sidebar aside label{display:none;}
+.comment-author-link{margin-right:5px !important;}
+#recentcomments li{background-image:none !important; margin-left:0px !important; padding-left:0px !important;}
+.entry-content ol, ul{margin: 15px 0 0 15px;}
+.entry-content ol li, ul li{line-height:22px; font-size: 16px;}
+.space40{ height:40px; clear:both;}
+.space50{ height:50px; clear:both;}
+.space60{ height:60px; clear:both;}
+.space70{ height:70px; clear:both;}
+.space80{ height:80px; clear:both;}
+.space100{ height:100px; clear:both;}
+.space150{ height:120px; clear:both;}
