@@ -138,10 +138,15 @@ if ( is_page('energia') ) {?>
 
 <?php
     if ( is_page('tecnologia-de-informacion') ) {?>
-    <div style="position:relative;">
+    <div class="footer-pages" style="position:relative;">
         <img src="<?= $images_url."technology.jpg";?>" style="width:100%" class="estilo">
-        <div style="position:absolute;width:; px;background-color:;color:white;top:0;left:0;padding-left:35%;padding-top:100px;font-size:40px;z-index:5; text-align: center;">Si busca conectarse <br>con el resto del mundo...</div>
-        <div style="position:absolute;width:; px;background-color:;color:white;top:0;left:0;padding-left:35%;padding-top:270px;font-size:40px;font-weight:bold;z-index:5; text-align:center">Cuente con nosotros <br>para Acesorarlo.</div>
+        <div class="footer-content">
+			<p>
+				Si busca conectarse <br>con el resto del mundo...
+				<br><br>
+				Cuente con nosotros <br>para Acesorarlo.
+			</p>
+		</div>
     </div>
 <?php }?>
 

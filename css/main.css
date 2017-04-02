@@ -105,10 +105,10 @@ a.ver:hover {
 
 
 .menu-item-41 ul li a{
-	background: #ff0000;
+    background: #ff0000;
 }
 .menu-item-42 ul li a {
-	background: #ffccff;
+    background: #ffccff;
 }
 
 
@@ -141,19 +141,23 @@ a.ver:hover {
 PAGE SECTION BANNER
 */
 .basic-img{
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%
 }
 .banner-wrapper{
     height:auto;
     margin: auto;
     text-align:center;
-	position:relative;
+    position:relative;
+    overflow: auto;
 }
 .banner-wrapper img{
     width: 100%;
 }
 .main-content-wrapper{
     position:relative;
+    height: 100%;
+    overflow: auto;
 }
 .main-content-obj{
     position:absolute;
@@ -183,9 +187,8 @@ PAGE SECTION BANNER
 }
 .petroleogas-middle-banner{
     position:relative;
-    height:300px;
+    min-height:300px;
     background-color:#575756;
-    max-width:1900px;
     color:#ffffff;
 }
 .petroleogas-middle-banner .content{
@@ -270,32 +273,28 @@ PAGE SECTION BANNER
 }
 .up-title-ti{
     position:absolute;
-    width:700px;
     color:white;
     top:0;
     left:0;
-    padding-left:350px;
-    padding-top:30px;
-    font-size:25px;
+    padding: 30px 15px 0 350px;
+    font-size:2em;
     z-index:5;
     text-align: justify;
 }
 .down-title-ti{
     position:absolute;
-    width:900px;
     color:white;
     top:0;
     left:0;
-    padding-left:260px;
-    padding-top:555px;
-    font-size:20px;
-    z-index:5;
+    padding: 550px 350px 30px 15px;
+    font-size:2em;
     text-align: justify;
 }
 
 .telecom-wrapper{
     position:relative;
-    height:350px;
+    overflow: auto;
+    min-height:350px;
     background-color:#ceebf9;
     max-width:1900px;
     color:#000000;
@@ -325,10 +324,11 @@ PAGE SECTION BANNER
 .energy-wrapper-1{
     background-color:#23ad73;
     color:#ffffff;
-    height:300px;
+    min-height:300px;
     margin: auto;
     padding-top: 50px;
     padding-left: 100px;
+    overflow: auto;
 }
 .energy-wrapper-1 .left{
     float:left;
@@ -343,6 +343,23 @@ PAGE SECTION BANNER
     float:left;
     width:50%;
     overflow:hidden;
+}
+.energy-wrapper-2{
+    position:relative;
+    overflow: auto;
+}
+.energy-wrapper-2 .content{
+    position: absolute;  
+    overflow: auto;
+    top: 70px; 
+    left: 160px; 
+    right: 670px; 
+    bottom: 99px;  
+    opacity: 0.75; 
+    z-index: 100; 
+    background-color: white; 
+    padding-right: 30px; 
+    padding-left: 30px;
 }
 .energy-wrapper-3{
     position: relative;
@@ -403,7 +420,7 @@ PAGE SECTION BANNER
     text-align:center;
     font-size:3em;
     background-color: #000;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 .footer-petroleogas-img{
     width:100%
@@ -570,179 +587,221 @@ p.form-submit input[type="submit"]{background-color:#0ec7ab;}
 #copyright a{ color:#2194fb;}
 
 @media screen and (max-width:479px){
-	.site-aligner{ width:95%; margin:0 auto;}
-	.header{ padding-bottom:0;}
-	.headerwhite{ padding-bottom:0;}
-	.header .logo{ float:none; text-align:center; padding:0;}
-	.headerwhite .logo{ float:none; text-align:center; padding:0;}
-	.header .logo p{text-align:center;}
-	.headerwhite .logo p{text-align:center;}
-	.header .site-nav{ float:none;}
-	.headerwhite .site-nav-grey{ float:none;}
-	.headerwhite .site-nav-green{ float:none;}
-	.headerwhite .site-nav-blue{ float:none;}
-	.headerwhite .site-nav-violet{ float:none;}
-	.site-nav ul li{ float:none; padding:5px 2px 5px 0;}
-	.site-nav-grey ul li{ float:none; padding:5px 2px 5px 0;}
-	.site-nav-green ul li{ float:none; padding:5px 2px 5px 0;}
-	.site-nav-blue ul li{ float:none; padding:5px 2px 5px 0;}
-	.site-nav-violet ul li{ float:none; padding:5px 2px 5px 0;}
-	.site-nav ul li ul{ margin-left:30px;}
-	.site-nav-grey ul li ul{ margin-left:30px;}
-	.site-nav-green ul li ul{ margin-left:30px;}
-	.site-nav-blue ul li ul{ margin-left:30px;}
-	.site-nav-violet ul li ul{ margin-left:30px;}
-	.site-nav li:hover a, .site-nav li.current_page_item a{ background-color:#ffffff !important; color:#f39223 !important;}
-	.site-nav li:hover ul li:hover, .site-nav li:hover ul li.current-page-item{ background-color:#ffffff !important;}
-	.slide_info{ display:none;}
-    .main-content-wrapper{ height: 900px;}
-    .main-content-wrapper .basic-img{height: 900px;}
+    .site-aligner{ width:95%; margin:0 auto;}
+    .header{ padding-bottom:0;}
+    .headerwhite{ padding-bottom:0;}
+    .header .logo{ float:none; text-align:center; padding:0;}
+    .headerwhite .logo{ float:none; text-align:center; padding:0;}
+    .header .logo p{text-align:center;}
+    .headerwhite .logo p{text-align:center;}
+    .header .site-nav{ float:none;display: block !important;}
+    .headerwhite .site-nav-grey{ float:none;}
+    .headerwhite .site-nav-green{ float:none;}
+    .headerwhite .site-nav-blue{ float:none;}
+    .headerwhite .site-nav-violet{ float:none;}
+    .site-nav ul li{ float:none; padding:5px 2px 5px 0;}
+    .site-nav-grey ul li{ float:none; padding:5px 2px 5px 0;}
+    .site-nav-green ul li{ float:none; padding:5px 2px 5px 0;}
+    .site-nav-blue ul li{ float:none; padding:5px 2px 5px 0;}
+    .site-nav-violet ul li{ float:none; padding:5px 2px 5px 0;}
+    .site-nav ul li ul{ margin-left:30px;}
+    .site-nav ul li a{ padding: 5px 15px 5px 15px;}
+    .site-nav-grey ul li ul{ margin-left:30px;}
+    .site-nav-grey ul li a{ padding: 5px 15px 5px 15px;}
+    .site-nav-grey ul li.current_page_item{ background-color: #565656; color:#fff !important;}
+    .site-nav-grey ul li.current_page_item a{ color:#fff !important;}
+    .site-nav-green ul li ul{ margin-left:30px;}
+    .site-nav-green ul li a{ padding: 5px 15px 5px 15px;}
+    .site-nav-green ul li.current_page_item{ background-color: #23ad73; color:#fff !important;}
+    .site-nav-green ul li.current_page_item a{ color:#fff !important;}
+    .site-nav-blue ul li ul{ margin-left:30px;}
+    .site-nav-blue ul li a{ padding: 5px 15px 5px 15px;}
+    .site-nav-blue ul li.current_page_item{ background-color: #3bb0e5;; color:#fff !important;}
+    .site-nav-blue ul li.current_page_item a{ color:#fff !important;}
+    .site-nav-violet ul li ul{ margin-left:30px;}
+    .site-nav-violet ul li a{ padding: 5px 15px 5px 15px;}
+    .site-nav-violet ul li.current_page_item{ background-color: #984d99; color:#fff !important;}
+    .site-nav-violet ul li.current_page_item a{ color:#fff !important;}
+    .site-nav li:hover a, .site-nav li.current_page_item a{ background-color:#ffffff !important; color:#f39223 !important;}
+    .site-nav li:hover ul li:hover, .site-nav li:hover ul li.current-page-item{ background-color:#ffffff !important;}
+    .slide_info{ display:none;}
+    .main-content-wrapper{ height: 100%;}
+    .main-content-wrapper img{min-height: 1060px;}
     .main-content-obj .title{font-size: 2em;}
     .main-content-obj .content{font-size: 1.2em;}
-    .up-title-oil-gas{font-size: 1.5em;}
-    .up-title-energy{font-size: 1.5em;}
-    .up-content-energy{width: auto;padding-top: 80px;}
+    .up-title-oil-gas{font-size: 1.5em; font-weight: bold;}
+    .up-title-energy{font-size: 1.5em; text-align: center;}
+    .up-content-energy{width: auto;padding-top: 80px; padding-left: 5px; padding-right: 5px;}
     .up-title-telecom{font-size: 1.5em; padding: 10%;}
-    .energy-banner-img{height: 550px;}
-    .petroleogas-middle-banner{height: 350px;}
-    .petroleogas-middle-banner .content{font-size: 1.3em;}
-    .petroleogas-end-banner .content{font-size: 1.3em;}
+    .up-title-ti{padding: 20px 5px 0 5px;font-size: 1em}
+    .down-title-ti{padding:281px 5px 0 5px;font-size: 1em;}
+    .title-ti-img{height: 100%;}
+    .energy-banner-img{min-height: 575px;}
+    .petroleogas-middle-banner{height: auto; overflow: auto;}
+    .petroleogas-middle-banner .content{font-size: 1.3em; padding: 5px 5px 5px 5px;}
+    .petroleogas-end-banner .content{font-size: 1.3em; font-weight: bold;}
     .footer-main{height: 150px;}
     .footer-content{font-size: 2em;}
     .footer-petroleogas-img{height: 150px;}
     .footer-pages{height: 200px !important;}
     .footer-pages img{height: 200px !important;}
-    .telecom-wrapper{height: 650px;}
+    .telecom-wrapper{min-height: 650px;}
     .telecom-wrapper .sub-wrapper{padding: 25px 20px 0 20px;}
     .telecom-wrapper .sub-wrapper .title{font-size: 0.8em;}
     .energy-wrapper-1{padding-left: 15px;height: 450px;}
     .energy-wrapper-1 .left{width: auto;}
     .energy-wrapper-1 .left .content{font-size: 1em;}
-
+    .energy-wrapper-2{min-height: 900px;}
+    .energy-wrapper-2 img{min-height: 900px;}
+    .energy-wrapper-2 .content{top: 5px; left: 0;right: 0;bottom: 5px;}
     .energy-wrapper-3 .title{text-align: center;padding-right: 0;}
     .energy-wrapper-3 .content{text-align: center;padding-right: 0;padding-bottom: 15px;}
     .energy-wrapper-4 .title{text-align: center;padding-left: 0;}
     .energy-wrapper-4 .content{text-align: center;padding-left: 0;padding-bottom: 15px;}
-	.theme-default .nivo-directionNav a{ top:30px !important;}
-	.one_half, .one_third, .two_third, .one_fourth, .three_fourth, .one_fifth, .four_fifth{ width:300px !important; float:none !important; margin:0 auto 30px !important;}
-	.latest-blog{ text-align:center;}
-	.last_column, .last{ float:none !important; margin-right:auto !important;}
-	.contact .form-left, .contact .form-right{ width:100%; float:none;}
-	.contact .form-right{ margin-top:0;}
-	.contact .form-left input[type="text"], .contact .form-left input[type="tel"]{ width:100%; box-sizing:border-box;}
-	.contact .form-right textarea{ width:100%; box-sizing:border-box;}
-	.contact .form-right input[type="text"].cf_captcha{ width:auto;}
-	#footer .widget-column{ width:90%; float:none; margin:0 auto 40px;}
-	.left, .right{ float:none; width:100%; text-align:center;}
-	.services{ width:90%; margin:0 auto;}
-	.service-box{ float:none; display:block; margin:0 auto 30px;}
-	#content h1.entry-title{ margin-bottom:30px;}
-	.content-left, .content-right{ float:none; width:auto; margin:0; padding:0;}
-	#sidebar{ width:auto;}
-	.content_right, .sidebar_right{ float:none;}
-	.entry-contact input[type="text"], .entry-contact input[type="tel"], .entry-contact textarea{ width:100%; box-sizing:border-box;}
-	.entry-contact input[type="text"].cf_captcha{ width:auto;}
-	.feature-box{ width:100%; float:none; display:block; transform:none; transition:none; box-sizing:border-box; margin-bottom:20px;}
-	.feature-box:hover{ transform:none;}
-	.all-box{ top:-45px; margin-bottom:-45px;}
-	.blogbox-left, .blogbox-right{float:none; display:block; width:auto;}
-	#sidebar aside ul{margin-left:15px;}
-	#sidebar aside ul li{text-align:left;}
-	.blog-post{margin-top:0px;}
-	.recent-post-title{ margin:0 auto; width:90%;}
+    .theme-default .nivo-directionNav a{ top:30px !important;}
+    .one_half, .one_third, .two_third, .one_fourth, .three_fourth, .one_fifth, .four_fifth{ width:300px !important; float:none !important; margin:0 auto 30px !important;}
+    .latest-blog{ text-align:center;}
+    .last_column, .last{ float:none !important; margin-right:auto !important;}
+    .contact .form-left, .contact .form-right{ width:100%; float:none;}
+    .contact .form-right{ margin-top:0;}
+    .contact .form-left input[type="text"], .contact .form-left input[type="tel"]{ width:100%; box-sizing:border-box;}
+    .contact .form-right textarea{ width:100%; box-sizing:border-box;}
+    .contact .form-right input[type="text"].cf_captcha{ width:auto;}
+    #footer .widget-column{ width:90%; float:none; margin:0 auto 40px;}
+    .left, .right{ float:none; width:100%; text-align:center;}
+    .services{ width:90%; margin:0 auto;}
+    .service-box{ float:none; display:block; margin:0 auto 30px;}
+    #content h1.entry-title{ margin-bottom:30px;}
+    .content-left, .content-right{ float:none; width:auto; margin:0; padding:0;}
+    #sidebar{ width:auto;}
+    .content_right, .sidebar_right{ float:none;}
+    .entry-contact input[type="text"], .entry-contact input[type="tel"], .entry-contact textarea{ width:100%; box-sizing:border-box;}
+    .entry-contact input[type="text"].cf_captcha{ width:auto;}
+    .feature-box{ width:100%; float:none; display:block; transform:none; transition:none; box-sizing:border-box; margin-bottom:20px;}
+    .feature-box:hover{ transform:none;}
+    .all-box{ top:-45px; margin-bottom:-45px;}
+    .blogbox-left, .blogbox-right{float:none; display:block; width:auto;}
+    #sidebar aside ul{margin-left:15px;}
+    #sidebar aside ul li{text-align:left;}
+    .blog-post{margin-top:0px;}
+    .recent-post-title{ margin:0 auto; width:90%;}
+    #left{
+        width: 100%;
+        float: none;
+        padding: 0 5px 0 5px;
+        text-align: justify;
+    }
+    #right{
+        padding: 0 5px 0 5px;
+        text-align: justify;
+        margin: 0;
+    }
 }
 
 @media screen and (min-width:480px) and (max-width:719px){
-	.site-aligner{ width:95%; margin:0 auto;}
-	.header{ padding-bottom:0;}
-	.header .logo{ float:none; text-align:center; padding:0;}
-	.header .logo p{text-align:center;}
-	.header .site-nav{ float:none;}
-	.site-nav ul li{ float:none; padding:5px 2px 5px 0;}
-	.site-nav ul li ul{ margin-left:30px;}
-	.site-nav li:hover a, .site-nav li.current_page_item a{ background-color:#ff0000 !important; color:#f39223 !important;}
-	.site-nav li:hover ul li:hover, .site-nav li:hover ul li.current-page-item{ background-color:#ffffff !important;}
-	.slide_info{ display:block;}
-	.nivo-caption h1{ font-size:15px !important; font-weight:400; padding-left:12px;}
-	.nivo-caption p{ font-size:12px !important; text-shadow:1px 1px #fff;}
-	.nivo-caption{ top:15px; left:65px; width:70%;}
-	.theme-default .nivo-directionNav a{ top:60px !important;}
-	.one_half, .one_third, .two_third, .one_fourth, .three_fourth, .one_fifth, .four_fifth{ width:300px !important; float:none !important; margin:0 auto 30px !important;}
-	.latest-blog{ text-align:center;}
-	.last_column, .last{ float:none !important; margin-right:auto !important;}
-	.contact .form-left, .contact .form-right{ width:100%; float:none;}
-	.contact .form-right{ margin-top:0;}
-	.contact .form-left input[type="text"], .contact .form-left input[type="tel"]{ width:100%; box-sizing:border-box;}
-	.contact .form-right textarea{ width:100%; box-sizing:border-box;}
-	.contact .form-right input[type="text"].cf_captcha{ width:auto;}
-	#footer .widget-column{ width:80%; float:none; margin:0 auto 40px;}
-	.left, .right{ float:none; width:100%; text-align:center;}
-	.services{ width:90%; margin:0 auto;}
-	.service-box{ float:none; display:block; margin:0 auto 30px;}
-	#content h1.entry-title{ margin-bottom:30px;}
-	.content-left, .content-right{ float:none; width:auto; margin:0; padding:0;}
-	#sidebar{ width:auto;}
-	.content_right, .sidebar_right{ float:none;}
-	.entry-contact input[type="text"], .entry-contact input[type="tel"], .entry-contact textarea{ width:100%; box-sizing:border-box;}
-	.entry-contact input[type="text"].cf_captcha{ width:auto;}
-	.feature-box{ width:100% !important; float:none; display:block; transform:none; transition:none; box-sizing:border-box; margin-bottom:20px;}
-	.feature-box:hover{ transform:none;}
-	.all-box{ top:-45px; margin-bottom:-45px;}
-	.blogbox-left, .blogbox-right{float:none; display:block; width:auto; margin:0 auto !important;}
-	#sidebar aside ul{margin-left:15px;}
-	#sidebar aside ul li{text-align:left;}
-	.blog-post{margin-top:0px;}
-	.slide_more{font-size:12px !important;}
-	.slide_more a{padding:3px 10px;}
-	.latest-blog .last_column{margin-right:auto !important;}
+    .site-aligner{ width:95%; margin:0 auto;}
+    .header{ padding-bottom:0;}
+    .header .logo{ float:none; text-align:center; padding:0;}
+    .header .logo p{text-align:center;}
+    .header .site-nav{ float:none;}
+    .site-nav ul li{ float:none; padding:5px 2px 5px 0;}
+    .site-nav ul li ul{ margin-left:30px;}
+    .site-nav li:hover a, .site-nav li.current_page_item a{ background-color:#ff0000 !important; color:#f39223 !important;}
+    .site-nav li:hover ul li:hover, .site-nav li:hover ul li.current-page-item{ background-color:#ffffff !important;}
+    .slide_info{ display:block;}
+    .nivo-caption h1{ font-size:15px !important; font-weight:400; padding-left:12px;}
+    .nivo-caption p{ font-size:12px !important; text-shadow:1px 1px #fff;}
+    .nivo-caption{ top:15px; left:65px; width:70%;}
+    .theme-default .nivo-directionNav a{ top:60px !important;}
+    .one_half, .one_third, .two_third, .one_fourth, .three_fourth, .one_fifth, .four_fifth{ width:300px !important; float:none !important; margin:0 auto 30px !important;}
+    .latest-blog{ text-align:center;}
+    .last_column, .last{ float:none !important; margin-right:auto !important;}
+    .contact .form-left, .contact .form-right{ width:100%; float:none;}
+    .contact .form-right{ margin-top:0;}
+    .contact .form-left input[type="text"], .contact .form-left input[type="tel"]{ width:100%; box-sizing:border-box;}
+    .contact .form-right textarea{ width:100%; box-sizing:border-box;}
+    .contact .form-right input[type="text"].cf_captcha{ width:auto;}
+    #footer .widget-column{ width:80%; float:none; margin:0 auto 40px;}
+    .left, .right{ float:none; width:100%; text-align:center;}
+    .services{ width:90%; margin:0 auto;}
+    .service-box{ float:none; display:block; margin:0 auto 30px;}
+    #content h1.entry-title{ margin-bottom:30px;}
+    .content-left, .content-right{ float:none; width:auto; margin:0; padding:0;}
+    #sidebar{ width:auto;}
+    .content_right, .sidebar_right{ float:none;}
+    .entry-contact input[type="text"], .entry-contact input[type="tel"], .entry-contact textarea{ width:100%; box-sizing:border-box;}
+    .entry-contact input[type="text"].cf_captcha{ width:auto;}
+    .feature-box{ width:100% !important; float:none; display:block; transform:none; transition:none; box-sizing:border-box; margin-bottom:20px;}
+    .feature-box:hover{ transform:none;}
+    .all-box{ top:-45px; margin-bottom:-45px;}
+    .blogbox-left, .blogbox-right{float:none; display:block; width:auto; margin:0 auto !important;}
+    #sidebar aside ul{margin-left:15px;}
+    #sidebar aside ul li{text-align:left;}
+    .blog-post{margin-top:0px;}
+    .slide_more{font-size:12px !important;}
+    .slide_more a{padding:3px 10px;}
+    .latest-blog .last_column{margin-right:auto !important;}
 }
 
 @media screen and (min-width:720px) and (max-width:989px){
-	.logo{padding:0 0 0 25px;}
-	.site-aligner, .services{ width:95%; margin:0 auto;}
-	.mobile_nav{ float:right; width:40%;}
-	.site-nav{ clear:right; width:40%;}
-	.site-nav ul li{ float:none; padding:5px 2px 5px 0;}
-	.site-nav ul li ul{ margin-left:30px;}
-	.site-nav li:hover a, .site-nav li.current_page_item a{background-color:#ffffff !important; color:#f39223 !important;}
-	.site-nav li:hover ul li:hover, .site-nav li:hover ul li.current-page-item{background-color:#ffffff !important;}
-	.theme-default .nivo-directionNav a{ top:37% !important;}
-	.nivo-caption h1{ font-size:21px !important; font-weight:400; }
-	.nivo-caption p{ font-size:15px !important; padding-left:0px;}
-	.nivo-caption{ left:4%; top:3%; width:70%;}
-	.latest-blog img{ height:125px;}
-	.contact .form-right input[type="text"]{ width:auto;}
-	#footer .widget-column{ margin-right:36px;}
-	#content h1.entry-title{ margin-bottom:30px;}
-	.one_third{ margin-right:2% !important;}
-	.service-box{ width:23%; margin-right:25px;}
-	.content-left, .content-right{ width:60%;}
-	.sidebar_left{ width:35%;}
-	#sidebar{ width:auto;}
-	.feature-box{width:22%; min-height:375px;}
-	.feature-box img{ width:130px; height:100px;}
-	.feature-box .feature-title{margin: 0 0 10px; font-size:18px;}
-	.all-box{ top:-45px; margin-bottom:-45px;}
- 	.blogbox-left{width:35%;}
-	.blogbox-right{width:55%;}
-	#sidebar aside ul{margin-left:15px;}
-	#sidebar aside ul li{text-align:left;}
-	.blog-post{margin-top:0px;}
-	.slide_more{font-size:12px !important; margin-left:0px;}
-	.slide_more a{padding:3px 10px;}
-	.latest-blog .last_column{margin-right:auto !important;}
-	#sidebar aside.widget_search input[type="search"]{width:65%;}
-	#footer .widget-column{width:45%; margin-left:15px; margin-right:20px; margin-bottom:25px;}
+    .logo{padding:0 0 0 25px;}
+    .site-aligner, .services{ width:95%; margin:0 auto;}
+    .mobile_nav{ float:right; width:40%;}
+    .site-nav{ clear:right; width:40%;}
+    .site-nav ul li{ float:none; padding:5px 2px 5px 0;}
+    .site-nav ul li ul{ margin-left:30px;}
+    .site-nav li:hover a, .site-nav li.current_page_item a{background-color:#ffffff !important; color:#f39223 !important;}
+    .site-nav li:hover ul li:hover, .site-nav li:hover ul li.current-page-item{background-color:#ffffff !important;}
+    .theme-default .nivo-directionNav a{ top:37% !important;}
+    .nivo-caption h1{ font-size:21px !important; font-weight:400; }
+    .nivo-caption p{ font-size:15px !important; padding-left:0px;}
+    .nivo-caption{ left:4%; top:3%; width:70%;}
+    .latest-blog img{ height:125px;}
+    .contact .form-right input[type="text"]{ width:auto;}
+    #footer .widget-column{ margin-right:36px;}
+    #content h1.entry-title{ margin-bottom:30px;}
+    .one_third{ margin-right:2% !important;}
+    .service-box{ width:23%; margin-right:25px;}
+    .content-left, .content-right{ width:60%;}
+    .sidebar_left{ width:35%;}
+    #sidebar{ width:auto;}
+    .feature-box{width:22%; min-height:375px;}
+    .feature-box img{ width:130px; height:100px;}
+    .feature-box .feature-title{margin: 0 0 10px; font-size:18px;}
+    .all-box{ top:-45px; margin-bottom:-45px;}
+    .blogbox-left{width:35%;}
+    .blogbox-right{width:55%;}
+    #sidebar aside ul{margin-left:15px;}
+    #sidebar aside ul li{text-align:left;}
+    .blog-post{margin-top:0px;}
+    .slide_more{font-size:12px !important; margin-left:0px;}
+    .slide_more a{padding:3px 10px;}
+    .latest-blog .last_column{margin-right:auto !important;}
+    #sidebar aside.widget_search input[type="search"]{width:65%;}
+    #footer .widget-column{width:45%; margin-left:15px; margin-right:20px; margin-bottom:25px;}
 }
 
 @media screen and (min-width: 990px) and (max-width:1024px){
-	.all-box{ top:-65px; margin-bottom:-65px;}
-	.site-aligner{ width:95%; margin:0 auto;}
-	.nivo-caption{ left:4%; top:3%; width:70%; bottom:220px;}
-	.logo{padding-left:20px;}
-	.feature-box{width:22.5% !important; margin:0 2.2px; min-height:425px;}
-	.content-left, .content-right{ width:60%;}
-	.sidebar_left{width:35%;}
-	.blogbox-left{width:30%;}
-	.blogbox-right{width:65%;}
+    .all-box{ top:-65px; margin-bottom:-65px;}
+    .site-aligner{ width:95%; margin:0 auto;}
+    .nivo-caption{ left:4%; top:3%; width:70%; bottom:220px;}
+    .logo{padding-left:20px;}
+    .feature-box{width:22.5% !important; margin:0 2.2px; min-height:425px;}
+    .content-left, .content-right{ width:60%;}
+    .sidebar_left{width:35%;}
+    .blogbox-left{width:30%;}
+    .blogbox-right{width:65%;}
+    .energy-wrapper-2 .content{width: 90%; top: 70px; bottom: 99px; left: 5px; right: 5px;}
+    .main-content-wrapper img{min-height: 650px;}
+    #left{
+        width: 100%;
+        float: none;
+        padding: 0 5px 0 5px;
+        text-align: justify;
+    }
+    #right{
+        padding: 0 5px 0 5px;
+        text-align: justify;
+        margin: 0;
+    }
 }

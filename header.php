@@ -16,10 +16,10 @@
             	<div class="logo">
 				<?php
     				if ( is_front_page() ) {?>
-    	                <img src="http://www.tek-innova.com/wp-content/uploads/2017/02/Tek_Innova_LOGO-Bl.png">
+    	                <img src="<?= $images_url;?>Tek_Innova_LOGO-Bl.png">
     	            <?php }
     				else if ( is_page('petroleogas') ) {?>
-    					<img src="http://www.tek-innova.com/wp-content/uploads/2017/02/Tek_Innova_LOGO-GRIS_.png">
+    					<img src="<?= $images_url;?>logos/Tek_Innova_LOGO-GRIS_.png">
     				<?php }
     				else if ( is_page('energia') ) { ?>
     					<img src="http://www.tek-innova.com/wp-content/uploads/2017/02/Tek_Innova_LOGO-VERDE_.png">
@@ -107,7 +107,7 @@
         // IMAGENES ESTATICAS - NO SLIDER
         if ( is_page('petroleogas') ):?>
             <div class="banner-wrapper">
-                <img src="http://www.tek-innova.com/wp-content/themes/healing-touch/images/slides/oil&gas.jpg" alt="Pétroleo y Gas" title="Pétroleo y Gas"/>
+                <img src="<?= $images_url;?>pages/oil/oil&gas.jpg" alt="Pétroleo y Gas" title="Pétroleo y Gas"/>
                 <div class="up-title-oil-gas">Somos contratistas en el sector Petroleo y Gas</div>
             </div>
         <?php  endif;
@@ -132,7 +132,7 @@
         <?php endif;
 		if ( is_page('tecnologia-de-informacion') ):?>
             <div class="banner-wrapper">
-				<img src="http://www.tek-innova.com/wp-content/themes/healing-touch/images/slides/ti.jpg" alt="Tecnologia de Informacion" title="Tecnologia de Informacion" style="width: 100%;"/>
+				<img src="http://www.tek-innova.com/wp-content/themes/healing-touch/images/slides/ti.jpg" alt="Tecnologia de Informacion" title="Tecnologia de Informacion" style="width: 100%;" class="title-ti-img" />
 				<div class="up-title-ti">Tek INNOVA cuenta con un equipo de desarrolldores de software para llevar a cabo cualquier proyecto para su empresa. Nos enfocamos en la obtencion de resultados excepcionales que impulsan el valor de su negocio</div>
 				<div class="down-title-ti">Nuestros diseñadores e ingenieros de software son expertos que trabajan con usted
 				en cada paso del proceso como un equipo de producto dedicado a resolver sus problemas mas complejos. Nuestro enfoque de colaboración entre las organizaciones fomenta el pensamiento creativo que ofrece resultados.</div>
@@ -293,11 +293,10 @@
 					</div>
 				</div>
             </div>
-                <div style="position:absolute;max-width:1900px;background-color:;color:white;top:0;left:0;padding-left:40px;padding-top:110px;font-size:20px;z-index:5;"></div>
-            </div>
-            <div style="position:relative;">
-                <img src="http://www.tek-innova.com/wp-content/uploads/2017/02/energia_solar.jpg" alt="" title="Tecnologia de Informacion" style="width: 100%;"/>
-                <div style="position: absolute;  top: 70px; left: 160px; right: 670px; bottom: 99px;  opacity: 0.75; z-index: 100; background-color: white; padding-right: 30px; padding-left: 30px;">
+                <div style="position:absolute;max-width:1900px;background-color:;color:white;top:0;left:0;padding-left:40px;padding-top:110px;font-size:20px;z-index:5;"></div>            
+            <div class="energy-wrapper-2">
+                <img src="<?=$images_url;?>pages/energy/energia_solar.jpg" alt="" title="Tecnologia de Informacion" style="width: 100%;"/>
+                <div class="content">
                     <div style="position: relative;  top: 30px; left: 10px; right: 600px; bottom: 99px;  opacity: 0.75; z-index: 100;">
                         &nbsp;<h2 style="text-align:center; font-size:23px;">La experiencia para satisfacer <br>todos los desafios</h2><br>
                         <p style="font-size:16px; line-height:22px;">Desde el asesoramiento hasta la construcción de mantenimiento, Tek Innova ofrece una cartera completa de servicios apoyando cualquier elemento
