@@ -140,7 +140,7 @@
         <?php endif;
 		if ( is_page('telecom') ):?>
             <div class="banner-wrapper">
-            	<img src="<?= $images_url."telecom2.jpg";?>" alt="Telecom" title="Telecom" style="width: 100%;" />
+            	<img src="<?= $images_url."telecom2.jpg";?>" alt="Telecom" title="Telecom" style="width: 100%;" class="telecom-img" />
             	<div class="up-title-telecom">Tek INNOVA presta servicios a empresas de Telecomunicaciones en el mercado Latino Americano y el Caribe</div>
             </div>
         <?php endif;

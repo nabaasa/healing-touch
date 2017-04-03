@@ -111,13 +111,10 @@ if (is_front_page()){?>
 <?php
     if ( is_page('petroleogas') ) {?>
 <div class="footer-pages">
-	<img src="<?= $images_url."barriles_petroleo.jpg";?>" class="footer-petroleogas-img">
+	<img src="<?= $images_url."barriles_petroleo.jpg";?>">
 	<div class="footer-content">
-		<p>
-			Si usted tiene dudas.
-			<br><br>
-			Nosotros tenemos las respuestas.
-		</p>
+		<h4 class="title">Si usted tiene dudas...</h4>
+		<h4 class="sub-title">Nosotros tenemos las respuestas.</h4>
 	</div>
 </div>
     <?php }?>
@@ -125,13 +122,10 @@ if (is_front_page()){?>
 <?php
 if ( is_page('energia') ) {?>
     <div class="footer-pages">
-        <img src="<?= $images_url."energy1.jpg";?>" style="width:100%" class="estilo">
+        <img src="<?= $images_url."energy1.jpg";?>">
 		<div class="footer-content">
-			<p>
-				Venga con nosotros...
-				<br><br>
-				Para brindar a su proyecto <br>la ENERGÍA que requiere.
-			</p>
+			<h4 class="title">Venga con nosotros...</h4>
+			<h4 class="sub-title">Para brindar a su proyecto la ENERGÍA que requiere.</h4>
 		</div>
     </div>
 <?php }?>
@@ -139,27 +133,44 @@ if ( is_page('energia') ) {?>
 <?php
     if ( is_page('tecnologia-de-informacion') ) {?>
     <div class="footer-pages" style="position:relative;">
-        <img src="<?= $images_url."technology.jpg";?>" style="width:100%" class="estilo">
+        <img src="<?= $images_url."technology.jpg";?>">
         <div class="footer-content">
-			<p>
-				Si busca conectarse <br>con el resto del mundo...
-				<br><br>
-				Cuente con nosotros <br>para Acesorarlo.
-			</p>
+			<h4 class="title">Si busca conectarse con el resto del mundo...</h4>
+			<h4 class="sub-title">Cuente con nosotros para Asesorarlo.</h4>
 		</div>
     </div>
 <?php }?>
 
 <?php
 if ( is_page('telecom') ) {?>
-    <div class="footer-pages" style="height:400px;">
-        <img src="<?= $images_url."telecomunicaciones-antenas.jpg";?>" style="width:100%; height:400px;display: block;">
+	<div class="telecom-pre-footer" style="display: none;">
+		<h2>Nuestras Ofertas de Servicio</h2>
+		<div class="left">
+			<h4 class="title">Optimizacion de la Red – Drive Test</h4>
+			<div class="content">	
+				Con un sitio en el aire, es necesario comprobar el rendimiento del nuevo sitio. Esto se hace a través de pruebas de unidades de verificación. Los sitio se comprueban para la validación de los parámetros de integración y desempeño de la llamada de controlar: la terminación de llamadas, originación de llamadas, transferencia, control de potencia RX, calidad y nivel de RX, etc. Optimización de paramétrico – Una vez que una red de radio está en funcionamiento, su rendimiento es monitoreado. El rendimiento se compara con indicaciones clave de rendimiento (KPI) elegidos. Después de parámetros de radio de ajuste, los resultados se aplican a la red para lograr el rendimiento deseado. El foco principal de optimización de la red de radio está en áreas tales como el control de potencia, calidad, entregas, tráfico de abonados y la disponibilidad de recursos (y el acceso) mediciones. periódicas de seguimiento y optimización de la red en vivo durante todo el ciclo de vida de la red – El monitoreo regular del estado de la red (nueva implantación y expansión) haciendo pruebas de la unidad y el mantenimiento de KPI.	
+			</div>
+		</div>
+		<div class="right">
+			<h4 class="title">Auditoria de Red, evaluacion comparativa y planificacion de IBS y Diseño</h4>			
+			<div class="content">
+				Auditoría de las instalaciones es un proceso que identifica las discrepancias entre el diseño y la red implementada.
+Bechmarking Servicios – servicios de referencia es un análisis comparativo global que proporciona detalles sobre el analisis de mercado y la opinión en la red. El servicio evalúa el rendimiento frente a la competencia y las medidas de rendimiento de la red utilizando una prueba de manejo para examinar la cobertura y calidad de la llamada. Las pruebas se llevaron a cabo sobre la disponibilidad de llamada, calidad de llamada, establecimiento de llamada, tasa de éxito y tasa de éxito de traspaso. IBS – Un sistema de cobertura es deficiente a partir de células fuera del edificio, lo que lleva a la mala calidad, una solución puede ser la construcción de un sistema de cubierta. El objetivo de la planificación de células de interior es, como para la planificación de células tradicional, para planificar una buena cobertura y capacidad, y al mismo tiempo interferir lo menos posible.
+			</div>
+		</div>
+		<div class="bottom">
+			<h4 class="title">Planificación y Optimización Centro Virtual</h4>
+			<div class="content">
+				Un concepto único de una combinación de modelo interno y externo para llevar a cabo la planificación y optimización de redes inalámbricas.
+	Proporciona beneficios como bajos costos fijos, independientemente de la ubicación del proyecto, ciclo de entrega rápida y el despliegue rápido de los proyectos, paquetes de servicios rentable y flexible para satisfacer las necesidades únicas de los clientes.
+			</div>
+		</div>
+	</div>
+    <div class="footer-pages">
+        <img src="<?= $images_url."telecomunicaciones-antenas.jpg";?>">
 		<div class="footer-content">
-			<p>
-				Si busca conectarse <br>con el resto del mundo...
-				<br><br>
-				Cuente con nosotros <br>para Acesorarlo.
-			</p>
+			<h4 class="title">Si busca conectarse con el resto del mundo...</h4>
+			<h4 class="sub-title">Cuente con nosotros para asesorarlo.</h4>			
 		</div>
     </div>
 <?php }?>
