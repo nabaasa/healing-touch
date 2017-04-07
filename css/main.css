@@ -1,12 +1,12 @@
 #wrapper{margin:0; padding:0;}
 .last{ float:right !important; margin-right:0 !important;}
-.site-aligner{ width:1170px; margin:0 auto; padding:0;}
+.site-aligner{ width:100%; margin:0 auto; padding:0;}
 .header{padding:40px 0; background-color:#161e42;}
 .header2{padding:0px 0; background-color:#161e42;}
 .headerwhite{padding:40px 0; background-color:#ffffff;}
 .logo{ float:left;  margin:0; padding:0 0 0 240px; color:#ffffff;}
 .logo h2{text-transform:uppercase;}
-
+#content #sitemain .entry-content{padding: 2%;}
 .titulo{
     padding: 0.5em;
     color: #f39223;
@@ -17,7 +17,18 @@
     margin: 0 auto;
     width: 100%;
 }
-
+#left{
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+#right{
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
 /* SUB-TITULOS  */
 
 a.tlt {
@@ -271,26 +282,34 @@ PAGE SECTION BANNER
     right:0;
     bottom:0;
 }
+.title-ti-img{
+    max-height: 525px;
+}
 .up-title-ti{
     position:absolute;
     color:white;
     top:0;
     left:0;
-    padding: 30px 15px 0 350px;
+    padding: 30px 20px 20px 350px;
     font-size:2em;
     z-index:5;
     text-align: justify;
     font-weight: bold;
+    background-color: #984d99;
+    opacity: 0.7;
 }
 .down-title-ti{
     position:absolute;
     color:white;
     top:0;
     left:0;
-    padding: 550px 350px 30px 15px;
+    padding: 30px 350px 20px 20px;
     font-size:2em;
     text-align: justify;
     font-weight: bold;
+    background-color: #984d99;
+    opacity: 0.7;
+    margin-top: 394px;
 }
 
 .telecom-wrapper{
@@ -360,8 +379,10 @@ PAGE SECTION BANNER
     opacity: 0.75; 
     z-index: 100; 
     background-color: white; 
-    padding-right: 30px; 
-    padding-left: 30px;
+    padding: 30px 25px 30px 25px;
+}
+.energy-wrapper-2 img{
+    height: 530px;
 }
 .energy-wrapper-3{
     position: relative;
@@ -488,7 +509,10 @@ PAGE SECTION BANNER
 .site-nav ul li:hover ul li ul, .site-nav ul li:hover ul li:hover ul li ul{display:none; background-color:#ff0000}
 .site-nav ul li:hover ul li:hover ul, .site-nav ul li:hover ul li:hover ul li:hover ul{display:block; padding:0;}
 .site-nav ul ul ul{left: 100%; top:0;}
-
+.title-ti-img{max-height: 647px;}
+.site-aligner{width: 100%;}
+.logo{padding: 0 0 0 0; padding-left: 30%}
+#content .entry-content{padding-left: 25px;}
 
 }
 #home_slider{ margin:0; padding:0;}
@@ -552,7 +576,8 @@ span.error_msg{ color:#f30;}
 .service-box .read {background:none repeat scroll 0 0 #fff; border-radius:5px; color:#000; font:300 14px/15px "PT Sans"; padding:7px 10px; text-align: center;}
 
 /* ============== Blog ============= */
-.content-left{ /*float:left;*/ width:1130px; margin:0; padding:0;}
+
+.content-left{ /*float:left;*/ width:100%; margin:0; padding:0;}
 .content-right{ float:right; width:830px; margin:0; padding:0;}
 .sidebar_right {clear: right; float: right;}
 .sidebar_left {clear: left; float: left;}
@@ -673,8 +698,8 @@ p.form-submit input[type="submit"]{background-color:#0ec7ab;}
     .up-content-energy{width: auto;padding-top: 80px; padding-left: 5px; padding-right: 5px;}
     .up-title-telecom{font-size: 1.5em; padding: 10%;}
     .up-title-ti{padding: 20px 5px 0 5px;font-size: 1em}
-    .down-title-ti{padding:281px 5px 0 5px;font-size: 1em;}
-    .title-ti-img{height: 100%;}
+    .down-title-ti{padding:15px 5px 0 5px;font-size: 1em;}
+    .title-ti-img{height: 507px;}
     .energy-banner-img{min-height: 575px;}
     .petroleogas-middle-banner{height: auto; overflow: auto;}
     .petroleogas-middle-banner .content{font-size: 1.3em; padding: 5px 5px 5px 5px;}
@@ -707,7 +732,7 @@ p.form-submit input[type="submit"]{background-color:#0ec7ab;}
     .energy-wrapper-1 .left{width: auto;}
     .energy-wrapper-1 .left .content{font-size: 1em; text-align: justify;}
     .energy-wrapper-2{min-height: 1036px;}
-    .energy-wrapper-2 img{min-height: 1036px;}
+    .energy-wrapper-2 img{min-height: 1056px;}
     .energy-wrapper-2 .content{top: 5px; left: 0;right: 0;bottom: 5px; text-align: justify;}
     .energy-wrapper-3 .title{text-align: center;padding-right: 0;}
     .energy-wrapper-3 .content{text-align: justify;padding: 15px 10px 15px 10px;}
@@ -747,10 +772,12 @@ p.form-submit input[type="submit"]{background-color:#0ec7ab;}
         text-align: justify;
     }
     #right{
+        width: 100%;
         padding: 0 5px 0 5px;
         text-align: justify;
         margin: 0;
     }
+    .credits{margin-right: 12px;}
 }
 
 @media screen and (min-width:480px) and (max-width:719px){
@@ -838,6 +865,21 @@ p.form-submit input[type="submit"]{background-color:#0ec7ab;}
     #footer{
         padding-left: 30%;
     }
+    .column.column-one.column-offset-2{
+        height: 80px;
+        width: 80px;
+        left: 5%;
+    }
+    .column.column-two.column-inset-1{
+        height: 80px;
+        width: 80px;
+        left: 12%;
+    }
+    .column.column-three.column-offset-1{
+        height: 80px;
+        width: 80px;
+        left: 12%;
+    }
 }
 
 @media screen and (min-width: 990px) and (max-width:1024px){
@@ -846,13 +888,15 @@ p.form-submit input[type="submit"]{background-color:#0ec7ab;}
     .nivo-caption{ left:4%; top:3%; width:70%; bottom:220px;}
     .logo{padding-left:110px;}
     .feature-box{width:22.5% !important; margin:0 2.2px; min-height:425px;}
-    .content-left, .content-right{ width:60%;}
+    .content-left, .content-right{ width:100%;}
     .sidebar_left{width:35%;}
     .blogbox-left{width:30%;}
     .blogbox-right{width:65%;}
-    .energy-wrapper-2 .content{width: 90%; top: 70px; bottom: 99px; left: 5px; right: 5px;}
+    .energy-wrapper-1 .left{width: 100%;}
+    .energy-wrapper-2 .content{width: 90%; top: 70px; bottom: 99px; left: 80px; right: 5px;}
+    .energy-wrapper-2 img{height: 620px}
     .main-content-wrapper img{min-height: 650px;}
-    .title-ti-img{height: 736px;}
+    .title-ti-img{min-height: 607px;}
     #left{
         width: 100%;
         float: none;
@@ -860,8 +904,24 @@ p.form-submit input[type="submit"]{background-color:#0ec7ab;}
         text-align: justify;
     }
     #right{
+        width: 100%;
         padding: 0 5px 0 5px;
         text-align: justify;
         margin: 0;
     }    
+}
+@media screen and (min-width: 960px){
+    /*.content-left, .content-right,#left,#right{
+        width: 100%;
+    }*/
+    .down-title-ti{
+        margin-top: 394px;
+    }
+    .telecom-wrapper{
+        min-height: 400px;
+    }
+    .energy-wrapper-2 .content{
+        width: 80%;
+        /*left:75px;*/
+    }
 }

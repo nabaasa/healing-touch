@@ -132,7 +132,7 @@
         <?php endif;
 		if ( is_page('tecnologia-de-informacion') ):?>
             <div class="banner-wrapper">
-				<img src="http://www.tek-innova.com/wp-content/themes/healing-touch/images/slides/ti.jpg" alt="Tecnologia de Informacion" title="Tecnologia de Informacion" style="width: 100%;" class="title-ti-img" />
+				<img src="<?= $images_url;?>pages/it/ti.jpg" alt="Tecnologia de Informacion" title="Tecnologia de Informacion" style="width: 100%;" class="title-ti-img" />
 				<div class="up-title-ti">Tek INNOVA cuenta con un equipo de desarrolldores de software para llevar a cabo cualquier proyecto para su empresa. Nos enfocamos en la obtencion de resultados excepcionales que impulsan el valor de su negocio</div>
 				<div class="down-title-ti">Nuestros diseñadores e ingenieros de software son expertos que trabajan con usted
 				en cada paso del proceso como un equipo de producto dedicado a resolver sus problemas mas complejos. Nuestro enfoque de colaboración entre las organizaciones fomenta el pensamiento creativo que ofrece resultados.</div>
@@ -297,25 +297,21 @@
             <div class="energy-wrapper-2">
                 <img src="<?=$images_url;?>pages/energy/energia_solar.jpg" alt="" title="Tecnologia de Informacion" style="width: 100%;"/>
                 <div class="content">
-                    <div style="position: relative;  top: 30px; left: 10px; right: 600px; bottom: 99px;  opacity: 0.75; z-index: 100;">
-                        &nbsp;<h2 style="text-align:center; font-size:23px;">La experiencia para satisfacer <br>todos los desafios</h2><br>
-                        <p style="font-size:16px; line-height:22px;">Desde el asesoramiento hasta la construcción de mantenimiento, Tek Innova ofrece una cartera completa de servicios apoyando cualquier elemento
-                        de su proyecto de energía. Sea cual sea el tamaño de ó el tipo de aplicación, Tek Innova tiene la amplitud y profundidad de experiencia para ofrecer
-                        una planta de energía a medida para adaptarse a sus necesidades.</p><br>
-                        <p style="font-size:16px; line-height:22px;">Combinamos nuestra experiencia en ingeniería con nuestra red para ofrecer soluciones personalizadas para proyectos de energía
-                            Diésel - en cualquier lugar en todo el país.</p><br>
-                        <p style="font-size:16px; line-height:22px;">Las planta de enregía diésel siguen siendo la primera opción para la generación de energía en cautividad en todo el mundo. Estas centrales ofrecen
-                        una mayor fiabilidad y operaciones independientes de la red, lo que aumenta a los operadores el control que tienen sobre su energía, y protegerlos
-                        contra los cortes de energía.</p><br>
-                        <p style="font-size:16px; line-height:22px;">Tek INNOVA un líder en la generación de energía diésel tiene el know-how y recursos para establecer plantas de energía de clase mundial
-                        para satisfacer sus objetivos. Nuestro servicio llave en mano abarca todo, desde la evaluación del emplazamiento de la instalación y el funcionamiento
-                        continuo y soporte post-venta. Con los motores Cummins de alta resistencia que son conocidos por su eficiencia de combustible y fiabilidad, se obtiene
-                        el rendimiento que necesita para lograr desempeños óptimos en su inversión.</p>
-                    </div>
+                    <h2 style="text-align:center; font-size:23px;">La experiencia para satisfacer todos los desafios</h2>
+					<br/>
+					<p style="font-size:16px; line-height:22px;">Desde el asesoramiento hasta la construcción de mantenimiento, Tek Innova ofrece una cartera completa de servicios apoyando cualquier elemento
+					de su proyecto de energía. Sea cual sea el tamaño de ó el tipo de aplicación, Tek Innova tiene la amplitud y profundidad de experiencia para ofrecer
+					una planta de energía a medida para adaptarse a sus necesidades.</p><br>
+					<p style="font-size:16px; line-height:22px;">Combinamos nuestra experiencia en ingeniería con nuestra red para ofrecer soluciones personalizadas para proyectos de energía
+						Diésel - en cualquier lugar en todo el país.</p><br>
+					<p style="font-size:16px; line-height:22px;">Las planta de enregía diésel siguen siendo la primera opción para la generación de energía en cautividad en todo el mundo. Estas centrales ofrecen
+					una mayor fiabilidad y operaciones independientes de la red, lo que aumenta a los operadores el control que tienen sobre su energía, y protegerlos
+					contra los cortes de energía.</p><br>
+					<p style="font-size:16px; line-height:22px;">Tek INNOVA un líder en la generación de energía diésel tiene el know-how y recursos para establecer plantas de energía de clase mundial
+					para satisfacer sus objetivos. Nuestro servicio llave en mano abarca todo, desde la evaluación del emplazamiento de la instalación y el funcionamiento
+					continuo y soporte post-venta. Con los motores Cummins de alta resistencia que son conocidos por su eficiencia de combustible y fiabilidad, se obtiene
+					el rendimiento que necesita para lograr desempeños óptimos en su inversión.</p>
                 </div>
-                <div style="position: absolute; widht:400px; left: 70px; top: 70px; bottom: 99px; right: 0; z-index: 100; margin: 10% 25%; color:white; font-weight:bold; text-align: center;">
-
-                </div >
             </div>
 
             <div class="energy-wrapper-3">

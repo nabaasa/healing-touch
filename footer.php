@@ -197,7 +197,7 @@ Bechmarking Servicios – servicios de referencia es un análisis comparativo gl
 
      	<div id="sociallogos-"></div>
      	<div id="divider3">&nbsp;</div>
-     	<p class="credits">Desarrollo Tek INNOVA </p>
+     	<div class="credits">Desarrollo Tek INNOVA </div>
         </div>
       </div>
     </div>
