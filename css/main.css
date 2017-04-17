@@ -6,7 +6,6 @@
 .headerwhite{padding:40px 0; background-color:#ffffff;}
 .logo{ float:left;  margin:0; padding:0 0 0 240px; color:#ffffff;}
 .logo h2{text-transform:uppercase;}
-#content #sitemain .entry-content{padding: 2%;}
 .titulo{
     padding: 0.5em;
     color: #f39223;
@@ -17,16 +16,20 @@
     margin: 0 auto;
     width: 100%;
 }
+#container{
+    margin: 0 auto;
+    width: 1100px;
+}
 #left{
-    width: 50%;
+    width: 480px;
     float: left;
-    padding: 0;
+    padding: 20px;
     margin: 0;
 }
 #right{
-    width: 50%;
+    width: 500px;
     float: left;
-    padding: 0;
+    padding: 20px;
     margin: 0;
 }
 /* SUB-TITULOS  */
@@ -382,7 +385,7 @@ PAGE SECTION BANNER
     padding: 30px 25px 30px 25px;
 }
 .energy-wrapper-2 img{
-    height: 530px;
+    height: 565px;
 }
 .energy-wrapper-3{
     position: relative;
@@ -511,7 +514,7 @@ PAGE SECTION BANNER
 .site-nav ul ul ul{left: 100%; top:0;}
 .title-ti-img{max-height: 647px;}
 .site-aligner{width: 100%;}
-.logo{padding: 0 0 0 0; padding-left: 30%}
+.logo{padding: 0 12% 0 12%;}
 #content .entry-content{padding-left: 25px;}
 
 }
@@ -564,7 +567,7 @@ span.error_msg{ color:#f30;}
 #content h1.entry-title{ text-align: center; margin:0 0 30px; padding:0; text-transform:uppercase; font:400 28px 'Roboto',san-serif; color:#f39223; background-color: #ffffff; margin-left: auto; margin-right: auto;} /* alfonso */
 #content h1.entry-title a{ color:#797979;}
 #content .entry-content{ margin:0; padding:0;}
-#content .entry-content p{ margin-bottom:20px; font-size: 16px; color:#000000;}
+#content .entry-content p{ margin-bottom:20px; font-size: 16px; color:#000000; padding: 20px;}
 .member_info img.attachment-large{ width:100%; height: auto;}
 .member_dtl h2{font:18px 'Roboto',san-serif;}
 .member_dtl h3{font:300 15px 'Roboto',san-serif;}
@@ -732,7 +735,7 @@ p.form-submit input[type="submit"]{background-color:#0ec7ab;}
     .energy-wrapper-1 .left{width: auto;}
     .energy-wrapper-1 .left .content{font-size: 1em; text-align: justify;}
     .energy-wrapper-2{min-height: 1036px;}
-    .energy-wrapper-2 img{min-height: 1056px;}
+    .energy-wrapper-2 img{min-height: 1090px;}
     .energy-wrapper-2 .content{top: 5px; left: 0;right: 0;bottom: 5px; text-align: justify;}
     .energy-wrapper-3 .title{text-align: center;padding-right: 0;}
     .energy-wrapper-3 .content{text-align: justify;padding: 15px 10px 15px 10px;}
@@ -765,6 +768,7 @@ p.form-submit input[type="submit"]{background-color:#0ec7ab;}
     #sidebar aside ul li{text-align:left;}
     .blog-post{margin-top:0px;}
     .recent-post-title{ margin:0 auto; width:90%;}
+    #container{width: 100%;}
     #left{
         width: 100%;
         float: none;
@@ -773,9 +777,9 @@ p.form-submit input[type="submit"]{background-color:#0ec7ab;}
     }
     #right{
         width: 100%;
+        float: none;
         padding: 0 5px 0 5px;
         text-align: justify;
-        margin: 0;
     }
     .credits{margin-right: 12px;}
 }
@@ -804,6 +808,7 @@ p.form-submit input[type="submit"]{background-color:#0ec7ab;}
     .contact .form-right textarea{ width:100%; box-sizing:border-box;}
     .contact .form-right input[type="text"].cf_captcha{ width:auto;}
     #footer .widget-column{ width:80%; float:none; margin:0 auto 40px;}
+    #container{width: 100%;}
     .left, .right{ float:none; width:100%; text-align:center;}
     .services{ width:90%; margin:0 auto;}
     .service-box{ float:none; display:block; margin:0 auto 30px;}
@@ -886,7 +891,7 @@ p.form-submit input[type="submit"]{background-color:#0ec7ab;}
     .all-box{ top:-65px; margin-bottom:-65px;}
     .site-aligner{ width:95%; margin:0 auto;}
     .nivo-caption{ left:4%; top:3%; width:70%; bottom:220px;}
-    .logo{padding-left:110px;}
+    .logo{padding: 0 1% 0 1%;}
     .feature-box{width:22.5% !important; margin:0 2.2px; min-height:425px;}
     .content-left, .content-right{ width:100%;}
     .sidebar_left{width:35%;}

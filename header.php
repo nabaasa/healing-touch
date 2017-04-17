@@ -30,9 +30,7 @@
     				else if ( is_page('Tecnologías de Información') ) { ?>
     					<img src="http://www.tek-innova.com/wp-content/uploads/2017/02/Tek_Innova_LOGO-MORADO_.png">
     				<?php } ?>
-        			<?php // healing_touch_the_custom_logo(); ?>
                 	<h2><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h2>
-                    <!--<p>--><?php // bloginfo('description'); ?><!--</p>-->
 					<?php
 						$site_nav_class = 'site-nav';
 						if(is_page('petroleogas'))
