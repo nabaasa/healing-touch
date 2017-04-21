@@ -273,25 +273,22 @@
 
         else if ( is_page('energia') ) {?>
             <div class="energy-wrapper-1">
-				<div class="left">
-					<div class="title">
-						A nivel corporativo, nuestros expertos colaboran con las administracion para:
-					</div>
-					<div class="content">
-						<ul>
-							<li>Desarrollar una estrategia de inversión corporativa</li>
-							<li>Evaluar macro tendencias de la industria y su impacto en los servicios públicos</li>
-							<li>Implementar nuevos modelos de negocio, como los servicios de eficiencia "inteligentes" o la generación distribuida</li>
-							<li>Identificar el nivel adecuado de integración vertical</li>
-							<li>Definir la cartera y estrategias de expansión internacional</li>
-							<li>Aumentar la eficiencia de las funciones de apoyo</li>
-							<li>Integrar la estrategia corporativa y las finanzas corporativas para gestionar el retorno total para el accionista</li>
-							<li>Inculcar una cultura de alto rendimiento impulsada a trevés del negocio</li>
-						</ul>
-					</div>
+				<h1 class="title">
+					A nivel corporativo, nuestros expertos colaboran con las administracion para:
+				</h1>
+				<div class="content">
+					<ul>
+						<li>Desarrollar una estrategia de inversión corporativa</li>
+						<li>Evaluar macro tendencias de la industria y su impacto en los servicios públicos</li>
+						<li>Implementar nuevos modelos de negocio, como los servicios de eficiencia "inteligentes" o la generación distribuida</li>
+						<li>Identificar el nivel adecuado de integración vertical</li>
+						<li>Definir la cartera y estrategias de expansión internacional</li>
+						<li>Aumentar la eficiencia de las funciones de apoyo</li>
+						<li>Integrar la estrategia corporativa y las finanzas corporativas para gestionar el retorno total para el accionista</li>
+						<li>Inculcar una cultura de alto rendimiento impulsada a trevés del negocio</li>
+					</ul>
 				</div>
             </div>
-                <div style="position:absolute;max-width:1900px;background-color:;color:white;top:0;left:0;padding-left:40px;padding-top:110px;font-size:20px;z-index:5;"></div>            
             <div class="energy-wrapper-2">
                 <img src="<?=$images_url;?>pages/energy/energia_solar.jpg" alt="" title="Tecnologia de Informacion" style="width: 100%;"/>
                 <div class="content">

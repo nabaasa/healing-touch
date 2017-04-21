@@ -359,6 +359,10 @@ PAGE SECTION BANNER
     overflow: auto;
 }
 
+.main-content-wrapper img {
+    min-height: 650px;
+}
+
 .main-content-obj {
     position: absolute;
     top: 0;
@@ -561,6 +565,10 @@ PAGE SECTION BANNER
     overflow: auto;
 }
 
+.energy-wrapper-1 .title {
+    text-align: center;
+}
+
 .energy-wrapper-1 .left {
     float: left;
     width: 50%;
@@ -597,7 +605,7 @@ PAGE SECTION BANNER
 }
 
 .energy-wrapper-2 img {
-    height: 565px;
+    height: 580px;
 }
 
 .energy-wrapper-3 {
@@ -2382,5 +2390,8 @@ p.form-submit input[type="submit"] {
 @media screen and (min-width: 1919px) {
     .logo {
         padding: 0 12% 0 28%;
+    }
+    .main-content-wrapper img {
+        min-height: 650px;
     }
 }
